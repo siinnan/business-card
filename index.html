@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Firose - Synergy Business Consultants</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .card {
+      background: white;
+      width: 360px;
+      border-radius: 20px;
+      padding: 24px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+    }
+
+    .top {
+      display: flex;
+      justify-content: space-between; /* Pushes items to opposite edges */
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+
+    .photo img {
+      width: 220px; /* Increased image size */
+      height: 244px; /* Increased to maintain proportion */
+      object-fit: cover;
+      border-radius: 12px;
+    }
+
+    /* Updated Right Panel Layout */
+    .right-panel {
+      display: flex;
+      flex-direction: row; 
+      align-items: center; 
+      justify-content: flex-end;
+      gap: 12px;
+      height: 244px; /* Matched to new image height to stay centered */
+    }
+
+    .social-icons {
+      display: flex;
+      flex-direction: column;
+      gap: 12px; /* Slightly increased gap for the taller space */
+    }
+
+    .social-icons a {
+      width: 38px;
+      height: 38px;
+      background: black;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+    }
+
+    .social-icons a svg {
+      width: 18px;
+      height: 18px;
+      fill: white;
+    }
+
+    .panel-divider {
+      width: 1px;
+      height: 160px; /* Increased height to match taller icon stack */
+      background: #e0e0e0;
+      margin: 0 2px;
+    }
+
+    /* Container for Logo + Handle */
+    .brand-cluster {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 8px; 
+    }
+
+    .logo-icon {
+      width: 45px; 
+      height: auto;
+      fill: #27aae1; 
+    }
+
+    .handle {
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+      font-size: 11px;
+      color: #888;
+      text-align: center;
+      letter-spacing: 1px;
+    }
+
+    /* Name section */
+    .name-section {
+      margin-bottom: 20px;
+    }
+
+    .name-section h1 {
+      font-size: 28px;
+      font-weight: 900;
+      letter-spacing: 1px;
+      line-height: 1.1;
+    }
+
+    .name-section h2 {
+      font-size: 22px;
+      font-weight: 300;
+      letter-spacing: 3px;
+      color: #333;
+    }
+
+    .divider {
+      width: 36px;
+      height: 2px;
+      background: black;
+      margin: 10px 0;
+    }
+
+    /* Info rows */
+    .info-row {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 14px;
+      font-size: 14px;
+    }
+
+    .info-label {
+      font-weight: 700;
+      min-width: 65px;
+    }
+
+    .info-value {
+      color: #333;
+      line-height: 1.7;
+    }
+
+    .info-value a {
+      color: #333;
+      text-decoration: none;
+    }
+
+    /* Buttons */
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .btn {
+      display: block;
+      text-align: center;
+      padding: 14px;
+      border-radius: 6px;
+      font-weight: 700;
+      font-size: 15px;
+      text-decoration: none;
+      letter-spacing: 0.5px;
+      cursor: pointer;
+    }
+
+    .btn-outline {
+      border: 2px solid black;
+      color: black;
+      background: white;
+    }
+
+    .btn-filled {
+      background: black;
+      color: white;
+      border: 2px solid black;
+    }
+
+    /* Bottom logo */
+    .bottom-logo {
+      margin-top: 24px;
+      padding-top: 16px;
+      border-top: 1px solid #e0e0e0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .bottom-logo img {
+      width: 290px;
+      object-fit: contain;
+    }
+  </style>
+</head>
+<body>
+    
+  <div class="card">
+    
+    <div class="top">
+      <div class="photo"><img src="photo.jpeg" alt="Firose"></div>
+
+      <div class="right-panel">
+        <div class="social-icons">
+
+          <a href="https://synergytyping.com" target="_blank" title="Website">
+            <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2zm0 2c.68 0 1.5.57 2.24 2H9.76C10.5 6.57 11.32 6 12 6zm-3.5.76A9.2 9.2 0 0 0 6.1 10H4.08a8 8 0 0 1 4.42-3.24zM4.08 14h2.02a9.2 9.2 0 0 0 2.4 3.24A8 8 0 0 1 4.08 14zm3.68 0h8.48c-.6 2.3-1.8 4-4.24 4s-3.64-1.7-4.24-4zm8.76 3.24A9.2 9.2 0 0 0 17.9 14h2.02a8 8 0 0 1-4.4 3.24zM17.9 10a9.2 9.2 0 0 0-2.4-3.24A8 8 0 0 1 19.92 10H17.9zm-1.58 0H7.68C8.2 7.84 9.9 6 12 6s3.8 1.84 4.32 4z"/></svg>
+          </a>
+
+          <a href="https://www.facebook.com/synergytyping/" target="_blank" title="Facebook">
+            <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+
+          <a href="https://instagram.com/synergytyping/" target="_blank" title="Instagram">
+            <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="black" stroke="white" stroke-width="1.5"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="white" stroke-width="2"/></svg>
+          </a>
+
+          <a href="https://wa.me/971506601090" target="_blank" title="WhatsApp">
+            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+          </a>
+
+        </div>
+
+        <div class="panel-divider"></div>
+
+        <div class="brand-cluster">
+          
+          <div class="handle">@synergytyping</div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="name-section">
+      <h1>FIROSE</h1>
+      <h2>MARAYAMKUNNATH</h2>
+      <div class="divider"></div>
+    </div>
+
+    <div class="info-row">
+      <span class="info-label">Address</span>
+      <span class="info-value">Al Maldieve Centre, Industrial Area M10, Musaffah, Abu Dhabi</span>
+    </div>
+
+    <div class="info-row">
+      <span class="info-label">Contact</span>
+      <span class="info-value">
+        <a href="tel:+971554757570">Mobile: +971 554 757 570</a><br>
+        <a href="tel:+97125542220">Office: +971 2 554 2220</a><br>
+        <a href="mailto:Firozmk@synergytyping.com">Firozmk@synergytyping.com</a><br>
+        <a href="https://synergytyping.com" target="_blank">Synergytyping.com</a>
+      </span>
+    </div>
+
+    <div class="buttons">
+      <a class="btn btn-outline" href="https://wa.me/971506601090">Text Me</a>
+      <a class="btn btn-filled" href="https://synergytyping.com" target="_blank">Visit Our Website</a>
+    </div>
+
+    <div class="bottom-logo">
+      <img src="logo.png" alt="Synergy Typing Services">
+    </div>
+
+  </div>
+</body>
+</html> 
