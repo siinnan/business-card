@@ -1,11 +1,12 @@
 BEGIN:VCARD
 VERSION:3.0
+N:Marayamkunnath;Firose;;;
 FN:Firose Marayamkunnath
 ORG:Synergy Typing Services
 TITLE:Business Consultant
 TEL;TYPE=CELL:+971554757570
 TEL;TYPE=WORK:+97125542220
-EMAIL:Firozmk@synergytyping.com
+EMAIL;TYPE=INTERNET:Firozmk@synergytyping.com
 ADR;TYPE=WORK:;;Al Maldieve Centre, Industrial Area M10;Musaffah;Abu Dhabi;;UAE
 URL:https://synergytyping.com
 END:VCARD
